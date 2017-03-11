@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand');
+
+body {
+    	font-family: 'Quicksand', sans-serif;
+    	text-align: center;
+    	background-color: red;
+    	color: white;
+}
+
+.text {
+  font-size: 7em;
+  font-family: 'Quicksand', cursive;
+  fill: none;
+  stroke-width: 8;
+  stroke-linejoin: round;
+  stroke-dasharray: 10, 5;
+  stroke-dashoffset: 0;
+  animation: stroke 10s infinite linear;
+}
+
+.text:nth-child(2n + 1) {
+  stroke: white;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(2n + 2) {
+  stroke: white;
+  animation-delay: -2.4s;
+}
+
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
